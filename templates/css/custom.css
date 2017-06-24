@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 body {
+    position: relative;
     padding-top: 70px;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
@@ -87,9 +88,6 @@ h2 {
     border-radius: 12px;
     color: #FFF;
     transition: all 0.5s;
-    -webkit-box-shadow: 6px 6px 28px -5px rgba(37, 37, 37, 0.3);
-    -moz-box-shadow: 6px 6px 28px -5px rgba(37, 37, 37, 0.3);
-    box-shadow: 6px 6px 28px -5px rgba(37, 37, 37, 0.3);
 }
 
 .button:hover, .button:active {
@@ -111,4 +109,14 @@ h2 {
     border-color: #0C5;
     right: 0;
     top: 50%;
+}
+
+.thumbnail {
+    -webkit-box-shadow: 6px 6px 28px -5px rgba(37, 37, 37, 0.3);
+    -moz-box-shadow: 6px 6px 28px -5px rgba(37, 37, 37, 0.3);
+    box-shadow: 6px 6px 28px -5px rgba(37, 37, 37, 0.3);
+}
+
+.thumbnail img{
+    padding: 0.5em;
 }
