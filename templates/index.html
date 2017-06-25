@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>ERPNext Conference 2017</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/component.css" rel="stylesheet">
 </head>
+
 <body id="Home" data-spy="scroll" data-target=".navbar" data-offset="50">
     <div class="md-modal md-effect" id="modal">
         <div class="md-content">
             <h3>Modal Dialog</h3>
             <div>
                 <p>This is a modal window. You can do the following things with it:</p>
-                <button class="md-close button">Close</button>
+                <button class="md-close button-sm">Close</button>
+            </div>
+        </div>
+    </div>
+    <div class="md-modal md-effect" id="modal-2">
+        <div class="md-content">
+            <h3>Modal Two</h3>
+            <div>
+                <p>This is a modal window. You can do the following things with it:</p>
+                <button class="md-close button-sm">Close</button>
             </div>
         </div>
     </div>
@@ -28,7 +39,7 @@
             <div class="hidden-xs">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#Home">Home</a></li>
-                    <li><a href="#">Program</a></li>
+                    <li><a href="#Program">Program</a></li>
                     <li><a href="#Speakers">Speakers</a></li>
                     <li><a href="#">Sponsors</a></li>
                 </ul>
@@ -47,65 +58,276 @@
                 </div>
             </div>
             <div id="Program">
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="section-panel text-center" style>
+                    <h2>Conference Agenda</h2>
+                    <p>Exciting Talks, Stories and Sharing of Best Practices</p>
+                    <button class="button-sm md-trigger" data-modal="modal-2">
+                            <span>View Agenda</span>
+                    </button>
+                </div>
             </div>
             <div id="Speakers">
-                <div class="text-center section-header">
-                    <h1>Our Speakers</h1>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail text-center" data-tilt>
-                        <img class="img" src="assets/profiles/Ross.jpg" alt="...">
-                        <div class="caption">
-                            <h3>Ross Gellar</h3>
-                        </div>
+                <div class="row section-panel">
+                    <div class="text-center">
+                        <h2>Our Speakers</h2>
                     </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail text-center" data-tilt>
-                        <img class="img" src="assets/profiles/Rachel.jpg" alt="...">
-                        <div class="caption">
-                            <h3>Rachel Greene</h3>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="Poster">
-                        <div class="thumbnail text-center" data-tilt>
-                            <img class="img" src="assets/profiles/Joey.jpg" alt="...">
-                            <div class="caption">
-                                <h3>Joey Tribbiani</h3>
-                                <p></p>
+                    <div id="myCarousel" class="carousel slide" data-interval="false" data-warp="false">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row-fluid">
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="thumbnail text-center" data-tilt>
+                                            <img class="img" src="assets/profiles/Ross.jpg" alt="...">
+                                            <div class="caption">
+                                                <h3>Ross Gellar</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="thumbnail text-center" data-tilt>
+                                            <img class="img" src="assets/profiles/Rachel.jpg" alt="...">
+                                            <div class="caption">
+                                                <h3>Rachel Greene</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="Poster">
+                                            <div class="thumbnail text-center" data-tilt>
+                                                <img class="img" src="assets/profiles/Joey.jpg" alt="...">
+                                                <div class="caption">
+                                                    <h3>Joey Tribbiani</h3>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="thumbnail text-center" data-tilt>
+                                            <img class="img" src="assets/profiles/Chandler.jpg" alt="...">
+                                            <div class="caption">
+                                                <h3>Chandler Bing</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="thumbnail text-center" data-tilt>
+                                            <img class="img" src="assets/profiles/Monica.jpg" alt="...">
+                                            <div class="caption">
+                                                <h3>Monica Gellar Bing</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="thumbnail text-center" data-tilt>
+                                            <img class="img" src="assets/profiles/Phoebe.jpg" alt="...">
+                                            <div class="caption">
+                                                <h3>Phoebe Buffay</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="Poster">
+                                            <div class="thumbnail text-center" data-tilt>
+                                                <img class="img" src="assets/profiles/Morgan.jpg" alt="...">
+                                                <div class="caption">
+                                                    <h3>Morgan Freeman</h3>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="thumbnail text-center" data-tilt>
+                                            <img class="img" src="assets/profiles/Sheldon.jpg" alt="...">
+                                            <div class="caption">
+                                                <h3>Sheldon Cooper</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row-fluid">
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="thumbnail text-center" data-tilt>
+                                            <img class="img" src="http://via.placeholder.com/512x512" alt="...">
+                                            <div class="caption">
+                                                <h3>Lorem Ipsum</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="thumbnail text-center" data-tilt>
+                                            <img class="img" src="http://via.placeholder.com/512x512" alt="...">
+                                            <div class="caption">
+                                                <h3>Dolor Sit</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="Poster">
+                                            <div class="thumbnail text-center" data-tilt>
+                                                <img class="img" src="http://via.placeholder.com/512x512" alt="...">
+                                                <div class="caption">
+                                                    <h3>Consect Adipiscing</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="thumbnail text-center" data-tilt>
+                                            <img class="img" src="http://via.placeholder.com/512x512" alt="...">
+                                            <div class="caption">
+                                                <h3>Duis Pretium</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="thumbnail text-center" data-tilt>
+                                            <img class="img" src="http://via.placeholder.com/512x512" alt="...">
+                                            <div class="caption">
+                                                <h3>Aliquam Volutpat</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="thumbnail text-center" data-tilt>
+                                            <img class="img" src="http://via.placeholder.com/512x512" alt="...">
+                                            <div class="caption">
+                                                <h3>Amet Lectus</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="Poster">
+                                            <div class="thumbnail text-center" data-tilt>
+                                                <img class="img" src="http://via.placeholder.com/512x512" alt="...">
+                                                <div class="caption">
+                                                    <h3>Mattis Consequat</h3>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="thumbnail text-center" data-tilt>
+                                            <img class="img" src="http://via.placeholder.com/512x512" alt="...">
+                                            <div class="caption">
+                                                <h3>Phasellus Justo</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row-fluid">
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="thumbnail text-center" data-tilt>
+                                            <img class="img" src="http://via.placeholder.com/512x512" alt="...">
+                                            <div class="caption">
+                                                <h3>Lorem Ipsum</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="thumbnail text-center" data-tilt>
+                                            <img class="img" src="http://via.placeholder.com/512x512" alt="...">
+                                            <div class="caption">
+                                                <h3>Dolor Sit</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="Poster">
+                                            <div class="thumbnail text-center" data-tilt>
+                                                <img class="img" src="http://via.placeholder.com/512x512" alt="...">
+                                                <div class="caption">
+                                                    <h3>Consect Adipiscing</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="thumbnail text-center" data-tilt>
+                                            <img class="img" src="http://via.placeholder.com/512x512" alt="...">
+                                            <div class="caption">
+                                                <h3>Duis Pretium</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="thumbnail text-center" data-tilt>
+                                            <img class="img" src="http://via.placeholder.com/512x512" alt="...">
+                                            <div class="caption">
+                                                <h3>Aliquam Volutpat</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="thumbnail text-center" data-tilt>
+                                            <img class="img" src="http://via.placeholder.com/512x512" alt="...">
+                                            <div class="caption">
+                                                <h3>Amet Lectus</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="Poster">
+                                            <div class="thumbnail text-center" data-tilt>
+                                                <img class="img" src="http://via.placeholder.com/512x512" alt="...">
+                                                <div class="caption">
+                                                    <h3>Mattis Consequat</h3>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="thumbnail text-center" data-tilt>
+                                            <img class="img" src="http://via.placeholder.com/512x512" alt="...">
+                                            <div class="caption">
+                                                <h3>Phasellus Justo</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail text-center" data-tilt>
-                        <img class="img" src="assets/profiles/Chandler.jpg" alt="...">
-                        <div class="caption">
-                            <h3>Chandler Bing</h3>
-                            <p></p>
-                        </div>
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="md-overlay"></div>
-<script src="js/jquery.js" ></script>
-<script src="js/tilt.jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/classie.js"></script>
-<script src="js/modalEffects.js"></script>
-<script>
-$('a').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
-    }, 800);
-    return false;
-});
-</script>
+    <script src="js/jquery.js"></script>
+    <script src="js/tilt.jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/modalEffects.js"></script>
+    <script>
+        $('a').click(function() {
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top
+            }, 800);
+            return false;
+        });
+        $('.carousel-control.left').click(function() {
+            $('#myCarousel').carousel('prev');
+        });
+
+        $('.carousel-control.right').click(function() {
+            $('#myCarousel').carousel('next');
+        });
+    </script>
 </body>
+
 </html>
